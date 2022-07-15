@@ -1,15 +1,15 @@
 'use strict'
-const age = prompt('Your age')
+const ageYear = prompt('Your birth year')
 const city = prompt('Your city')
 const sport = prompt('Your fav sport')
-
+const currentYear = (new Date()).getFullYear()
 
 function ageCalc (a) {
-    if(age === null) {
-        return 'It is a pity that you did not want to enter your age'
+    if(ageYear === null || ageYear === '') {
+        return 'It is a pity that you did not want to enter your birth year'
     }
     else {
-        return `Your age is ${a}`
+        return `Your age is ${currentYear - a}`
     }
 }
 
@@ -17,7 +17,7 @@ function cityCalc (city) {
     if(city === 'Kiev' || city === 'Moscow' || city === 'Minsk') {
         return `You live in the capital called ${city}`
     }
-    else if(city === null) {
+    else if(city === null || city === '') {
        return 'It is a pity that you did not want to enter your city'
     }
     else {
@@ -36,13 +36,16 @@ function sportCalc(sport) {
     else if(sport === 'Tennis') {
         return 'Cool! Do you wanna be like Raphael Nadal?'
     }
-    else if(sport === null) {
+    else if(sport === null || sport === '') {
         return 'It is a pity that you did not want to enter your fav sport'
+    }
+    else {
+        return `Cool! You like ${sport}`
     }
 }
 
 alert(`
-${ageCalc(age)}
+${ageCalc(ageYear)}
 ${cityCalc(city)}
 ${sportCalc(sport)}
 `)
