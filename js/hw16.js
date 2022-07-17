@@ -1,24 +1,13 @@
 'use strict'
-
 const number = +prompt('Your number')
-
 function simpleNum(number) {
-    for (let i = 2; i < number; i++) {
-        if (number % i === 0) {
-           number = 'Number isn\'t a simple one'
-            break;
-        }
+    if ( number === 1 ) { return number; }
+    else if (number < 1) { return NaN; }
+    let dell = 2;
+    while ( number % dell !== 0 ) {
+        dell = dell + 1;
     }
-    if (number === 1) {
-        console.log(number);
-    }
-else
-    if (number < 1) {
-        console.log(NaN);
-    }
-    else {
-        console.log(number);
-    }
+    return dell;
 }
 
-simpleNum(number)
+console.log(simpleNum(number));
