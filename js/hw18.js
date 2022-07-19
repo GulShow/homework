@@ -14,7 +14,9 @@ const padStr = (str, length, symbol, boolean = "true") => {
         return false
     } else if (length < str.length) {
         return str.substr(0, length)
+    } else if(!str || !length || !symbol) {
+        return false
     }
     return retResult
 }
-console.log(padStr('JavaScript', 20, '*', "false"))
+console.log(padStr('JS', 10 , '*', "false"))
