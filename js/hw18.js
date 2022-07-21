@@ -1,12 +1,12 @@
 'use strict'
-const padStr = (str, length, symbol, boolean = "true") => {
+const padStr = (str, length, symbol, boolean = true) => {
     let result = ""
 
     for (let i = 0; i < length; i++) {
         result += symbol
     }
     let retResult = (result + str).slice(-length)
-    if (boolean === "true") {
+    if (boolean === true) {
         retResult = (str + result).slice(0, length)
     }
 
@@ -19,4 +19,4 @@ const padStr = (str, length, symbol, boolean = "true") => {
     }
     return retResult
 }
-console.log(padStr('JS', 10 , '*', "false"))
+console.log(padStr('JS', 10 , '*', false))
