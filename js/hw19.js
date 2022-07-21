@@ -9,7 +9,7 @@ const toPos = (arr) => {
             exampleArr.push(number)
         }
      }
-    if(exampleArr.length === 0) {
+    if(!exampleArr.length) {
         return null
     }
     return exampleArr
