@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#input1 {
+    height: 42px;
+}
+
+.working {
+   margin-top: 120px;
+}
+.working__card-1 ,
+.working__card-2 ,
+.working__card-3 {
+    max-width: 405px;
+}
+
+.working__text {
+    max-width: 754px;
+    padding-bottom: 60px;
+}
+
+.comfort {
+    margin-top: 130px;
+}
+ .comfort__content-a {
+     width: 107px;
+ }
+
+ .comfort__content-a2 ,
+ .comfort__content-a3 {
+     height: 50px;
+     width: 192px;
+ }
+
+ .comfort__content-a4 {
+     width: 127px;
+ }
+
+ .comfort__content-item {
+     max-width: 245px;
+ }
+
