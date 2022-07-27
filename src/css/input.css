@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/*Header*/
 .header-top {
     background-color: #939878;
 }
@@ -20,6 +21,7 @@
     height: 42px;
 }
 
+/*Working*/
 .working {
     margin-top: 120px;
 }
@@ -35,6 +37,7 @@
     padding-bottom: 60px;
 }
 
+/*Comfort*/
 .comfort {
     margin-top: 130px;
 }
@@ -57,6 +60,7 @@
     max-width: 245px;
 }
 
+/*Area*/
 .area__a {
     width: 92px;
 }
@@ -70,6 +74,7 @@
     padding: 132px 0 160px 0;
 }
 
+/*Locations*/
 .locations {
     background-color: #F5F5F2;
     padding-bottom: 128px;
@@ -82,4 +87,57 @@
 
 .locations__content-item {
     max-width: 416px;
+}
+
+/*Family*/
+.family {
+    background: linear-gradient(#F5F5F2 50%, #FFF 50%);
+}
+.family__content {
+    background-color: #65665C;
+    max-width: 1280px;
+    padding: 96px 0;
+}
+
+.family__content-p {
+    max-width: 765px;
+    color: #E7E8E3;
+}
+
+.family__content-a {
+    width: 137px;
+    height: 50px;
+}
+
+/*Customers*/
+.customers__content-item {
+    max-width: 405px;
+    height: 300px;
+}
+
+/*Last*/
+.last {
+    background-color: #F5F5F2;
+}
+.last__a {
+    max-width: 53px;
+}
+
+.last__p {
+    max-width: 710px;
+}
+
+.last__a2 {
+    height: 50px;
+    width: 108px;
+}
+
+.last__content-item {
+    max-width: 405px;
+}
+
+.last__content-a {
+    background-color: #FAE8E1;
+    height: 30px;
+    max-width: 62px;
 }
