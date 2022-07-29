@@ -141,3 +141,20 @@
     height: 30px;
     max-width: 62px;
 }
+
+/*Footer*/
+#footer__top-form-input {
+    width: 240px;
+    height: 48px;
+}
+
+.footer__top-form-a {
+    width: 127px;
+    height: 50px;
+}
+
+.footer__bottom {
+    background-color: #F5F5F2;
+    height: 72px;
+    margin-top: 72px;
+}
